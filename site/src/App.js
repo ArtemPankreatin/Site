@@ -1,37 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-import {Row,Col, Button} from 'react-bootstrap'
-import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import {Row,Col,Button} from 'react-bootstrap'
+
+
+import { BrowserRouter as Router, Link, NavLink, Route, Routes} from 'react-router-dom';
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
+
+import {Home} from './Pages/Home';
+import {Sudoku} from './Pages/Sudoku';
+import {Tic_tac_toe} from './Pages/Tic-tac-toe'
+import {Sea_battles} from './Pages/Sea_battles'
+import {Checkers} from './Pages/Checkers'
+import {Minesweaper} from './Pages/Minesweaper'
 
 function App() {
   return(
   <>
-  <h4>Выберите игру</h4>
-    <div style={{ display: 'block', width: 'auto', height: 'auto', padding: 30, justifyContent: 'center', backgroundColor: '#F4FAAF', textAlign: 'center' }}>
-                 <h4>Выберите игру</h4>
-             <Row>
-                 <Col>
-                   <button className='button'>Судоку</button>
-                 </Col>
-                 <Col>
-                   <button className='button'>Крестики-Нолики</button>
-                 </Col>
-             </Row>
-             <Row>
-                     <Col>
-                         <button className='button'>Морской бой</button>
-                     </Col>
-                     <Col>
-                         <button className='button'>Шашки</button>
-                     </Col>
-                 </Row><Row>
-                     <Col>
-                         <button className='button'>Сапёр</button>
-                     </Col>
-                 </Row>
-             </div>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/sudoku' element={<Sudoku/>}/>
+        <Route path='/tic-tac-toe' element={<Tic_tac_toe/>}/>
+        <Route path='/sea_battles' element={<Sea_battles/>}/>
+        <Route path='/checkers' element={<Checkers/>}/>
+        <Route path='/minesweaper' element={<Minesweaper/>}/>
+      </Routes>
   </>
     
 
