@@ -12,38 +12,39 @@ const Home = () =>{
                 <h4>Выберите игру</h4>
                     <Row>
                     <Col>
-                        <Button
+                        <a
                         href="/sudoku"
-                        className='button'
-                        textAlign='middle'>Cудоку</Button>
+                        
+                        className='button-home'
+                        textAlign='middle'>Cудоку</a>
                     </Col>
                     <Col>
-                        <Button 
+                        <a 
                         href="/tic-tac-toe"
-                        className='button'
-                        textAlign='middle'>Крестики-Нолики</Button>
+                        className='button-home'
+                        textAlign='middle'>Крестики-Нолики</a>
                     </Col>
                     </Row>
                     <Row>
                     <Col>
-                        <Button 
+                        <a 
                         href="/sea_battles"
-                        className='button'
-                        textAlign='middle'>Морской бой</Button>
+                        className='button-home'
+                        textAlign='middle'>Морской бой</a>
                     </Col>
                     <Col>
-                        <Button 
+                        <a 
                         href="/checkers"
-                        className='button'
-                        textAlign='middle'>Шашки</Button>
+                        className='button-home'
+                        textAlign='middle'>Шашки</a>
                     </Col>
                     </Row>
                     <Row>
                     <Col>
-                        <Button 
+                        <a 
                         href="/minesweaper"
-                        className='button'
-                        textAlign='middle'>Сапёр</Button>
+                        className='button-home'
+                        textAlign='middle'>Сапёр</a>
                     </Col>
                     </Row>
                     </nav>

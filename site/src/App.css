@@ -36,34 +36,61 @@
     transform: rotate(360deg);
   }
 }
-.button{
+.button-home{
   width: 400px;
   height: 200px;
   border-radius: 50px;
   background-color: #0076ff;
-  box-shadow: 0px 4px 10px rgba(135, 167, 171, 0.5);
   color: white;
-  font-weight: 500;
-  text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.15);
-  outline: none;
-  cursor: pointer;
-  align-self: center;
-  align-content: center;
+  text-shadow: -2px 1px 3px rgba(0, 0, 0, 0.507);
+  box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.349);
+  align-items: center;
+  justify-content: center;
   font-family: verdana;
   font-size: 25px;
   margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 80px 50px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  font-weight: 500;
+
+  
+
 }
 
+.button-home:hover{
+  box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.87);
+  color: white;
+  
+
+}
+
+.button-home:active{
+  background-color: #282c34;
+  outline-style: none;
+  
+
+}
 .widget{
-  width: 75%;
-  height: 75%;
+  width: 900px;
+  height: 800px;
   text-align: center;
   background-color: #F4FAAF ;
+  border: 5px solid black;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   
 }
 .home_screen{ display: 'block';
@@ -78,5 +105,55 @@
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.tic-tac-toe{
+  width: 604px;
+  height: 604px;
+  border: 2px solid black;
+  margin: 50px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: table;
+  
+}
+
+.ttt-square{
+  width: 200px;
+  height:200px;
+  border: 1px solid black;
+  float:left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:400%;
+  
+}
+
+.ttt-restart-button{
+  width: 55px;
+  height:55px;
+  border: 1px solid black;
+  background-color: aqua;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  border-radius: 5px;
+  }
+.ttt-restart-button:hover{
+  box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.87);
+  
 }

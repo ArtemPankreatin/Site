@@ -14,21 +14,33 @@ import {Sea_battles} from './Pages/Sea_battles'
 import {Checkers} from './Pages/Checkers'
 import {Minesweaper} from './Pages/Minesweaper'
 
-function App() {
-  return(
-  <>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/sudoku' element={<Sudoku/>}/>
-        <Route path='/tic-tac-toe' element={<Tic_tac_toe/>}/>
-        <Route path='/sea_battles' element={<Sea_battles/>}/>
-        <Route path='/checkers' element={<Checkers/>}/>
-        <Route path='/minesweaper' element={<Minesweaper/>}/>
-      </Routes>
-  </>
-    
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      squares: Array(9).fill(null)
 
-  );
+    }
+    
+  }
+  clickHandler = event => {
+
+  }
+  render(){
+    return(
+      <>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/sudoku' element={<Sudoku/>}/>
+            <Route path='/tic-tac-toe' element={<Tic_tac_toe/>}/>
+            <Route path='/sea_battles' element={<Sea_battles/>}/>
+            <Route path='/checkers' element={<Checkers/>}/>
+            <Route path='/minesweaper' element={<Minesweaper/>}/>
+          </Routes>
+      </>
+      );
+  }
+  
 }
 
 export default App;
