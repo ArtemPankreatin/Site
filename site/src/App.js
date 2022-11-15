@@ -14,17 +14,19 @@ import {Sea_battles} from './Pages/Sea_battles'
 import {Checkers} from './Pages/Checkers'
 import {Minesweaper} from './Pages/Minesweaper'
 
+
+
+
 class App extends React.Component{
+  
   constructor(props){
     super(props);
     this.state = {
-      squares: Array(9).fill(null)
-
+      userId: 4
     }
-    
   }
-  clickHandler = event => {
-
+  get() {
+    return this.userId;
   }
   render(){
     return(

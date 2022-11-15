@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header_games from "../Components/Header_games";
 import '../App.css'
 import Footer from "../Components/Footer";
+import axios from "axios"
 let sudoku_field = [[1,2,3,4,5,6,7,8,9],
                 [4,5,6,7,8,9,1,2,3],
                 [7,8,9,1,2,3,4,5,6],
@@ -13,6 +14,16 @@ let sudoku_field = [[1,2,3,4,5,6,7,8,9],
                 [9,1,2,3,4,5,6,7,8]
 ] 
 
+async function getUser() {
+        try {
+          const response = await axios.post('/api/sudoku', {
+                
+          });
+          console.log(response);
+        } catch (error) {
+          console.error(error);
+        }
+      }
 
 
 const Sudoku = () =>{
