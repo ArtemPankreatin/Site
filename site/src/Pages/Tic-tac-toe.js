@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-
+import Footer from "../Components/Footer";
 import '../App.css'
+import Header_games from "../Components/Header_games";
 
 class Tic_tac_toe extends React.Component{
         constructor(props){
@@ -27,7 +28,7 @@ class Tic_tac_toe extends React.Component{
         render(){
                 return(
                         <>
-                        
+                        <Header_games/>
                     <div className="widget">
                         <h1 >Крестики Нолики</h1>
                         <div className="ttt-restart-button" onClick={this.resetGame}>
@@ -46,6 +47,7 @@ class Tic_tac_toe extends React.Component{
                             </div>
         
                     </div>
+                    <Footer/>
                     </>
                 )
         }

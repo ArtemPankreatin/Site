@@ -2,11 +2,16 @@ import React, { Component } from "react"
 import {Row,Col, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css'
+import Header_home from '../Components/Header_home'
+import Footer from "../Components/Footer";
+
+import telegram_logo from '../images/telegram_logo.png'
 
 
 const Home = () =>{
     return(
         <>
+        <Header_home/>
         <div className="home_screen">
                     <nav>
                 <h4>Выберите игру</h4>
@@ -16,7 +21,7 @@ const Home = () =>{
                         href="/sudoku"
                         
                         className='button-home'
-                        textAlign='middle'>Cудоку</a>
+                        textAlign='middle'>Судоку</a>
                     </Col>
                     <Col>
                         <a 
@@ -48,9 +53,11 @@ const Home = () =>{
                     </Col>
                     </Row>
                     </nav>
-    </div>
+        </div>
+        <Footer/>
     </>
     )
 
 }
 export {Home}
+
